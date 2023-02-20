@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ShopOnline</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopOnline.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div id="body">
+        <div id="header">
+            <div id="logo">
+                I SAW IT FIRST
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" class="text-black text-decoration-none"><span>Khám
+                                phá</span></a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="text-black text-decoration-none"><span>Sản
+                                phẩm</span></a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="text-black text-decoration-none"><span>Cửa
+                                hàng</span></a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="text-black text-decoration-none"><span>Liên
+                                hệ</span></a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="text-black text-decoration-none"><span>Trợ
+                                giúp</span></a></li>
+                </ul>
+            </div>
+            <div id="account">
+                <a asp-controller="Home" asp-action="Index"><button>Đăng nhập</button></a>
+                <a asp-controller="Home" asp-action="Index"><button>Đăng kí</button></a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <img src="~/img/vecteezy_online-shopping-on-phone-buy-sell-business-digital-web_4299835.jpg" width="100%"
+                style="border-radius: 20px">
+        </div>
+
+        <main>
+            @RenderBody()
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
