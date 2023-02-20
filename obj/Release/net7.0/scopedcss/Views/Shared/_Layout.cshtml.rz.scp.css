@@ -1,0 +1,38 @@
+#header[b-ogncoswewa] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo[b-ogncoswewa] {
+    font-size: 30px;
+}
+
+#menu ul[b-ogncoswewa] {
+    margin: 0;
+}
+
+#menu li[b-ogncoswewa] {
+    display: inline;
+    margin: 0 20px;
+}
+
+#account button[b-ogncoswewa] {
+    width: 120px;
+    height: 40px;
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    background: blueviolet;
+    margin: 0 5px;
+    transition: all 0.3s;
+    color: white;
+}
+
+#account button:hover[b-ogncoswewa] {
+    background: 0;
+    color: blueviolet;
+}
+
+#banner[b-ogncoswewa]{
+    margin: 50px 0;
+}
