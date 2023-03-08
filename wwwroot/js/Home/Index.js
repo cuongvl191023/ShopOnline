@@ -1,10 +1,10 @@
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 const lstProduct = document.getElementsByClassName('card');
+const lstproductWidth = (lstProduct[0].offsetWidth + 20) * lstProduct.length;
+let productWrapperPosition = 0;
 let productWrapper = document.getElementById('lstproduct');
 let productWrapperWidth = productWrapper.offsetWidth;
-let lstproductWidth = (lstProduct[0].offsetWidth + 20) * lstProduct.length;
-let productWrapperPosition = 0;
 nextBtn.addEventListener('click', () => {
   if (productWrapperPosition > -(lstproductWidth - productWrapperWidth)) {
     productWrapperPosition -= 100;

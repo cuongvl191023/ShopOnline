@@ -9,7 +9,7 @@
     white-space: nowrap;
 }
 
-#lstproduct-control{
+#lstproduct-control {
     margin: 10px 0;
 }
 
@@ -31,7 +31,7 @@
     color: blueviolet;
 }
 
-#next-btn{
+#next-btn {
     float: right;
 }
 
@@ -212,4 +212,8 @@
     opacity: 1;
     transform: translateY(0px);
     transition-delay: .7s;
+}
+
+h5 {
+    font-weight: 600;
 }

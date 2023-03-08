@@ -29,3 +29,34 @@ W:\ASP .NET\ShopOnline\ShopOnline\obj\Debug\net7.0\refint\ShopOnline.dll
 W:\ASP .NET\ShopOnline\ShopOnline\obj\Debug\net7.0\ShopOnline.pdb
 W:\ASP .NET\ShopOnline\ShopOnline\obj\Debug\net7.0\ShopOnline.genruntimeconfig.cache
 W:\ASP .NET\ShopOnline\ShopOnline\obj\Debug\net7.0\ref\ShopOnline.dll
+W:\Git\ShopOnline\bin\Debug\net7.0\appsettings.Development.json
+W:\Git\ShopOnline\bin\Debug\net7.0\appsettings.json
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.staticwebassets.runtime.json
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.exe
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.deps.json
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.runtimeconfig.json
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.dll
+W:\Git\ShopOnline\bin\Debug\net7.0\ShopOnline.pdb
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.csproj.AssemblyReference.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.GeneratedMSBuildEditorConfig.editorconfig
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.AssemblyInfoInputs.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.AssemblyInfo.cs
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.csproj.CoreCompileInputs.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.MvcApplicationPartsAssemblyInfo.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.RazorAssemblyInfo.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.RazorAssemblyInfo.cs
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets\msbuild.ShopOnline.Microsoft.AspNetCore.StaticWebAssets.props
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets\msbuild.build.ShopOnline.props
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ShopOnline.props
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ShopOnline.props
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets.pack.json
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets.build.json
+W:\Git\ShopOnline\obj\Debug\net7.0\staticwebassets.development.json
+W:\Git\ShopOnline\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+W:\Git\ShopOnline\obj\Debug\net7.0\scopedcss\bundle\ShopOnline.styles.css
+W:\Git\ShopOnline\obj\Debug\net7.0\scopedcss\projectbundle\ShopOnline.bundle.scp.css
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.dll
+W:\Git\ShopOnline\obj\Debug\net7.0\refint\ShopOnline.dll
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.pdb
+W:\Git\ShopOnline\obj\Debug\net7.0\ShopOnline.genruntimeconfig.cache
+W:\Git\ShopOnline\obj\Debug\net7.0\ref\ShopOnline.dll

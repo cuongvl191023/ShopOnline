@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ShopOnline.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Shared/_Layout.css" asp-append-version="true" />
 </head>
 
 <body>
@@ -33,6 +34,30 @@
             <div id="account">
                 <a asp-controller="Home" asp-action="Index"><button>Đăng nhập</button></a>
                 <a asp-controller="Home" asp-action="Index"><button>Đăng kí</button></a>
+            </div>
+            <div id="header-hide">
+                <button>Menu
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index"
+                                class="text-dark text-decoration-none"><span>Khám
+                                    phá</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index" class="text-dark text-decoration-none"><span>Sản
+                                    phẩm</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index" class="text-dark text-decoration-none"><span>Cửa
+                                    hàng</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index"
+                                class="text-dark text-decoration-none"><span>Liên
+                                    hệ</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index" class="text-dark text-decoration-none"><span>Trợ
+                                    giúp</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index"
+                                class="text-dark text-decoration-none"><span>Đăng
+                                    nhập</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Index"
+                                class="text-dark text-decoration-none"><span>Đăng
+                                    kí</span></a></li>
+                    </ul>
+                </button>
             </div>
         </div>
 

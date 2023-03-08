@@ -1,7 +1,0 @@
-W:\Git\ShopOnline\bin\Release\net7.0\publish\ShopOnline.exe
-W:\Git\ShopOnline\bin\Release\net7.0\publish\appsettings.Development.json
-W:\Git\ShopOnline\bin\Release\net7.0\publish\appsettings.json
-W:\Git\ShopOnline\bin\Release\net7.0\publish\ShopOnline.dll
-W:\Git\ShopOnline\bin\Release\net7.0\publish\ShopOnline.deps.json
-W:\Git\ShopOnline\bin\Release\net7.0\publish\ShopOnline.runtimeconfig.json
-W:\Git\ShopOnline\bin\Release\net7.0\publish\ShopOnline.pdb
