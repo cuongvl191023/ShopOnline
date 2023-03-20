@@ -1,0 +1,41 @@
+@model IEnumerable<Size>
+
+@{
+    ViewData["Title"] = "Index";
+    int stt = 1;
+}
+<link rel="stylesheet" href="~/css/Size/Index.css" asp-append-version="true" />
+<div class="head-crud-index">
+    <a asp-action="Create"><button>Thêm kích cỡ</button></a>
+</div>
+<div class="crud-index-table">
+    <ul class="crud-index-table-head row">
+        <li class="col">Số thứ tự</li>
+        <li class="col">Mã kích cỡ</li>
+        <li class="col">Tên kích cỡ</li>
+        <li class="col">Trạng thái</li>
+        <li class="col-1"></li>
+        <li class="col-1"></li>
+        <li class="col-1"></li>
+    </ul>
+    @foreach (var item in Model)
+    {
+        <ul class="crud-index-table-item row">
+            <li class="col">@(stt++)</li>
+            <li class="col">@item.Code</li>
+            <li class="col">@item.SizeName</li>
+            <li class="col">@(item.Status == 0 ? "Hoạt động" : "Không hoạt động")</li>
+            <li class="col-1">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="text-black text-decoration-none"><span>Edit</span></a>
+            </li>
+            <li class="col-1">
+                <a asp-action="Details" asp-route-id="@item.Id"
+                    class="text-black text-decoration-none"><span>Details</span></a>
+            </li>
+            <li class="col-1">
+                <a asp-action="Delete" asp-route-id="@item.Id"
+                    class="text-black text-decoration-none"><span>Delete</span></a>
+            </li>
+        </ul>
+    }
+</div>

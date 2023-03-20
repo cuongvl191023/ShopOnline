@@ -8,182 +8,35 @@
 </div>
 <div id="lstproduct-panel">
     <div id="lstproduct">
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
+        @foreach (var item in await _productService.GetAllProduct())
+        {
+            <div class="card">
+                <div class="imgBx">
+                    <img src="~/img/Sneaker-PNG-File.png">
                 </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="contentBx">
+                    <h2>@((
+#pragma warning disable
+                            await _shoeService.GetShoeById(item.IdShoe)
+#pragma warning restore
+                            ).ShoeName)</h2>
+                    <div class="size">
+                        <h3>Size :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
                 </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
             </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="imgBx">
-                <img src="~/img/Sneaker-PNG-File.png">
-            </div>
-            <div class="contentBx">
-                <h2>Nike Shoes</h2>
-                <div class="size">
-                    <h3>Size :</h3>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
-                </div>
-                <div class="color">
-                    <h3>Color :</h3>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <a asp-controller="Home" asp-action="Index"><span>Buy now</span></a>
-            </div>
-        </div>
+        }
     </div>
 </div>
 

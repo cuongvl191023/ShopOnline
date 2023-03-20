@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -31,9 +36,17 @@
                                 giúp</span></a></li>
                 </ul>
             </div>
-            <div id="account">
-                <a asp-controller="Home" asp-action="Index"><button>Đăng nhập</button></a>
-                <a asp-controller="Home" asp-action="Index"><button>Đăng kí</button></a>
+            <div id="account-button">
+                @if (SignInManager.IsSignedIn(this.User))
+                {
+                    <a asp-area="Identity" asp-page="/Account/Manage/Index"><button>Xin chào &gt;&lt;</button></a>
+                    <a asp-area="Identity" asp-page="/Account/Logout"><button>Đăng xuất</button></a>
+                }
+                else
+                {
+                    <a asp-area="Identity" asp-page="/Account/Login"><button>Đăng nhập</button></a>
+                    <a asp-area="Identity" asp-page="/Account/Register"><button>Đăng kí</button></a>
+                }
             </div>
             <div id="header-hide">
                 <button>Menu
@@ -50,12 +63,22 @@
                                     hệ</span></a></li>
                         <li><a asp-controller="Home" asp-action="Index" class="text-dark text-decoration-none"><span>Trợ
                                     giúp</span></a></li>
-                        <li><a asp-controller="Home" asp-action="Index"
-                                class="text-dark text-decoration-none"><span>Đăng
-                                    nhập</span></a></li>
-                        <li><a asp-controller="Home" asp-action="Index"
-                                class="text-dark text-decoration-none"><span>Đăng
-                                    kí</span></a></li>
+                        @if (SignInManager.IsSignedIn(this.User))
+                        {
+                            <li><a asp-area="Identity" asp-page="/Account/Login"
+                                    class="text-dark text-decoration-none"><span>Xin chào &gt;&lt;</span></a></li>
+                            <li><a asp-area="Identity" asp-page="/Account/Logout"
+                                    class="text-dark text-decoration-none"><span>Đăng xuất</span></a></li>
+                        }
+                        else
+                        {
+                            <li><a asp-area="Identity" asp-page="/Account/Manage/Index"
+                                    class="text-dark text-decoration-none"><span>Đăng
+                                        nhập</span></a></li>
+                            <li><a asp-area="Identity" asp-page="/Account/Register"
+                                    class="text-dark text-decoration-none"><span>Đăng
+                                        kí</span></a></li>
+                        }
                     </ul>
                 </button>
             </div>

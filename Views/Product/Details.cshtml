@@ -1,0 +1,89 @@
+@model Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/css/Shoe/Details.css" asp-append-version="true" />
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã sản phẩm
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Màu sắc
+        </dt>
+        <dd class="col-sm-10">
+            @((
+#pragma warning disable
+                await _colorService.GetColorById(Model.IdColor)
+#pragma warning restore
+                ).ColorName)
+        </dd>
+        <dt class="col-sm-2">
+            Thương hiệu
+        </dt>
+        <dd class="col-sm-10">
+            @((
+#pragma warning disable
+                await _brandService.GetBrandById(Model.IdBrand)
+#pragma warning restore
+                ).BrandName)
+        </dd>
+        <dt class="col-sm-2">
+            Chất liệu
+        </dt>
+        <dd class="col-sm-10">
+            @((
+#pragma warning disable
+                await _materialService.GetMaterialById(Model.IdMaterial)
+#pragma warning restore
+                ).MaterialName)
+        </dd>
+        <dt class="col-sm-2">
+            Kích cỡ
+        </dt>
+        <dd class="col-sm-10">
+            @((
+#pragma warning disable
+                await _sizeService.GetSizeById(Model.IdSize)
+#pragma warning restore
+                ).SizeName)
+        </dd>
+        <dt class="col-sm-2">
+            Giày
+        </dt>
+        <dd class="col-sm-10">
+            @((
+#pragma warning disable
+                await _shoeService.GetShoeById(Model.IdShoe)
+#pragma warning restore
+                ).ShoeName)
+        </dd>
+        <dt class="col-sm-2">
+            Giá
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Price
+        </dd>
+        <dt class="col-sm-2">
+            Mô tả
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Describe
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id"><button class="crud-toedit">Sửa</button></a>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách sản phẩm</button></a>
+</div>

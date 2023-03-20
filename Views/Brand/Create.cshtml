@@ -1,0 +1,52 @@
+@model Brand
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Brand/Create.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Create" class="crud-create-form" enctype="multipart/form-data">
+        <div>
+            <p>Tên thương hiệu</p>
+            <input asp-for="BrandName" />
+        </div>
+        <div>
+            <p>Quốc gia</p>
+            <input asp-for="BrandNation" />
+        </div>
+        <div>
+            <p>Website</p>
+            <input asp-for="BrandWebsite" />
+        </div>
+        <div>
+            <p>Mô tả</p>
+            <input asp-for="BrandDescribe" />
+        </div>
+        <div>
+            <div class="custom-file-upload">
+                <p>Logo</p>
+                <input asp-for="BrandLogo" type="file" name="BrandLogo" multiple style="
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                height: 100%;
+                " />
+                <label for="file-upload" class="btn">
+                    Upload
+                </label>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Thêm</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách thương hiệu</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

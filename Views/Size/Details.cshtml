@@ -1,0 +1,39 @@
+@model Size
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/css/Size/Details.css" asp-append-version="true" />
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã kích cỡ
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Tên kích cỡ
+        </dt>
+        <dd class="col-sm-10">
+            @Model.SizeName
+        </dd>
+        <dt class="col-sm-2">
+            Kích cỡ
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Size1
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id"><button class="crud-toedit">Sửa</button></a>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách kích cỡ</button></a>
+</div>

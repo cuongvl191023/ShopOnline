@@ -1,0 +1,74 @@
+@model Product
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Shoe/Create.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Create" class="crud-create-form">
+        <div>
+            <p>Màu sắc</p>
+            <select asp-for="IdColor">
+                @foreach (var item in await _colorService.GetAllColor())
+                {
+                    <option value="@item.Id">@item.ColorName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <p>Thương hiệu</p>
+            <select asp-for="IdBrand">
+                @foreach (var item in await _brandService.GetAllBrand())
+                {
+                    <option value="@item.Id">@item.BrandName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <p>Chất liệu</p>
+            <select asp-for="IdMaterial">
+                @foreach (var item in await _materialService.GetAllMaterial())
+                {
+                    <option value="@item.Id">@item.MaterialName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <p>Kích cỡ</p>
+            <select asp-for="IdSize">
+                @foreach (var item in await _sizeService.GetAllSize())
+                {
+                    <option value="@item.Id">@item.SizeName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <p>Giày</p>
+            <select asp-for="IdShoe">
+                @foreach (var item in await _shoeService.GetAllShoe())
+                {
+                    <option value="@item.Id">@item.ShoeName</option>
+                }
+            </select>
+        </div>
+        <div>
+            <p>Giá</p>
+            <input asp-for="Price" type="number" />
+        </div>
+        <div>
+            <p>Mô tả</p>
+            <input asp-for="Describe" />
+        </div>
+        <div>
+            <button type="submit">Thêm</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách sản phẩm</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

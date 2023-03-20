@@ -1,16 +1,132 @@
 {
   "Files": [
     {
-      "Id": "W:\\Git\\ShopOnline\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ShopOnline.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ShopOnline.bundle.scp.css"
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\BrandLogo\\109e517d-9b8c-4499-9c44-db0ea9e716b6.png",
+      "PackagePath": "staticwebassets\\BrandLogo\\109e517d-9b8c-4499-9c44-db0ea9e716b6.png"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\BrandLogo\\38ac548b-3edc-4b26-9ed6-e058263f57aa.png",
+      "PackagePath": "staticwebassets\\BrandLogo\\38ac548b-3edc-4b26-9ed6-e058263f57aa.png"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\BrandLogo\\8c312a1c-0c87-4df5-b954-12cf8120c303.png",
+      "PackagePath": "staticwebassets\\BrandLogo\\8c312a1c-0c87-4df5-b954-12cf8120c303.png"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\BrandLogo\\ca1fcf0f-b0f9-4ce7-9b89-5b9141e6def1.png",
+      "PackagePath": "staticwebassets\\BrandLogo\\ca1fcf0f-b0f9-4ce7-9b89-5b9141e6def1.png"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\BrandLogo\\d76c2671-0293-4802-92ab-d0c1d7e6f3bc.png",
+      "PackagePath": "staticwebassets\\BrandLogo\\d76c2671-0293-4802-92ab-d0c1d7e6f3bc.png"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Brand\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Brand\\Create.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Brand\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Brand\\Delete.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Brand\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Brand\\Details.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Brand\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Brand\\Edit.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Brand\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Brand\\Index.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Color\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Color\\Create.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Color\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Color\\Delete.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Color\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Color\\Details.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Color\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Color\\Edit.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Color\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Color\\Index.css"
     },
     {
       "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Home\\Index.css",
       "PackagePath": "staticwebassets\\css\\Home\\Index.css"
     },
     {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Material\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Material\\Create.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Material\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Material\\Delete.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Material\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Material\\Details.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Material\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Material\\Edit.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Material\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Material\\Index.css"
+    },
+    {
       "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shared\\_Layout.css",
       "PackagePath": "staticwebassets\\css\\Shared\\_Layout.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shoe\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Shoe\\Create.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shoe\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Shoe\\Delete.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shoe\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Shoe\\Details.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shoe\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Shoe\\Edit.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Shoe\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Shoe\\Index.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Size\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Size\\Create.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Size\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Size\\Delete.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Size\\Details.css",
+      "PackagePath": "staticwebassets\\css\\Size\\Details.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Size\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Size\\Edit.css"
+    },
+    {
+      "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\Size\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Size\\Index.css"
     },
     {
       "Id": "W:\\Git\\ShopOnline\\wwwroot\\css\\site.css",

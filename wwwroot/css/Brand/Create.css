@@ -1,0 +1,80 @@
+.crud-create-form div {
+    margin-top: 10px;
+}
+
+.crud-create-form input {
+    background: 0;
+    width: 100%;
+    outline: 0;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 2px black;
+    padding: 0 20px;
+}
+
+.crud-create-form input:focus {
+    border: solid 2px blueviolet;
+}
+
+.crud-create-form select {
+    background: 0;
+    width: 100%;
+    outline: 0;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 2px black;
+    padding: 0 20px;
+}
+
+.crud-create-form select:focus {
+    border: solid 2px blueviolet;
+}
+
+.crud-create-form p {
+    margin: 2px 20px;
+}
+
+.crud-create-form button {
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    background: blueviolet;
+    transition: all 0.3s;
+    color: white;
+}
+
+.crud-create-form button:hover {
+    background: 0;
+    color: blueviolet;
+}
+
+.crud-backlist {
+    width: 200px;
+    height: 40px;
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    background: blueviolet;
+    transition: all 0.3s;
+    color: white;
+    margin-top: 10px;
+}
+
+.crud-backlist:hover {
+    background: 0;
+    color: blueviolet;
+}
+
+.custom-file-upload {
+    position: relative;
+}
+
+.custom-file-upload label {
+    display: inline-block;
+    border: 2px solid black;
+    background: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+}

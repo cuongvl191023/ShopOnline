@@ -1,0 +1,37 @@
+@model Shoe
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<link rel="stylesheet" href="~/css/Shoe/Edit.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Edit" class="crud-edit-form">
+        <input type="hidden" asp-for="Code" value="@Model.Code">
+        <div>
+            <p>Tên giày</p>
+            <input asp-for="ShoeName" />
+        </div>
+        <div>
+            <p>Mô tả</p>
+            <input asp-for="ShoeDescribe" />
+        </div>
+        <div>
+            <p>Trạng thái</p>
+            <select asp-for="Status">
+                <option value="0">Hoạt động</option>
+                <option value="-1">Không hoạt động</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Sửa</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách giày</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

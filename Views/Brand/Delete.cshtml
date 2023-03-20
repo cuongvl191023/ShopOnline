@@ -1,0 +1,55 @@
+@model Brand
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link rel="stylesheet" href="~/css/Brand/Delete.css" asp-append-version="true" />
+<div>
+    <hr />
+    <img src="~/BrandLogo/@Model.BrandLogo" alt="Logo của @Model.BrandLogo" width="20%">
+    <hr>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã thương hiệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Tên thương hiệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandName
+        </dd>
+        <dt class="col-sm-2">
+            Quốc gia
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandNation
+        </dd>
+        <dt class="col-sm-2">
+            Website
+        </dt>
+        <dd class="col-sm-10">
+           <a href="@Model.BrandWebsite" class="text-black text-decoration-none">@Model.BrandWebsite</a> 
+        </dd>
+        <dt class="col-sm-2">
+            Mô tả
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandDescribe
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách thương hiệu</button></a>
+</div>

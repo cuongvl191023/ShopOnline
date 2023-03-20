@@ -1,0 +1,39 @@
+@model Color
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/css/Color/Details.css" asp-append-version="true" />
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã màu sắc
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Mã HEX
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ColorCode
+        </dd>
+        <dt class="col-sm-2">
+            Tên màu sắc
+        </dt>
+        <dd class="col-sm-10">
+            @Model.ColorName
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id"><button class="crud-toedit">Sửa</button></a>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách màu sắc</button></a>
+</div>

@@ -1,93 +1,92 @@
-﻿#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #header-hide {
-    position: relative;
+  position: relative;
 }
 
 #header-hide ul {
-    position: absolute;
-    top: 38px;
-    left: 5px;
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border: solid 2px blueviolet;
+  position: absolute;
+  top: 38px;
+  left: 5px;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border: solid 2px blueviolet;
 }
 
 #header-hide li {
-    padding-top: 5px;
-    width: 160px;
+  padding-top: 5px;
+  width: 160px;
 }
 
 #header-hide li:hover {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 #header-hide button:hover ul {
-    display: block;
+  display: block;
 }
 
 #logo {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #menu ul {
-    margin: 0;
+  margin: 0;
 }
 
 #menu li {
-    display: inline;
-    margin: 0 20px;
-    padding: 10px 0;
+  display: inline;
+  margin: 0 20px;
+  padding: 10px 0;
 }
 
 #menu li:hover {
-    border-bottom: solid 2px black;
+  border-bottom: solid 2px black;
 }
 
-#account button {
-    width: 120px;
-    height: 40px;
-    border: solid 2px blueviolet;
-    border-radius: 20px;
-    background: blueviolet;
-    margin: 0 5px;
-    transition: all 0.3s;
-    color: white;
+#account-button button {
+  width: 120px;
+  height: 40px;
+  border: solid 2px blueviolet;
+  border-radius: 20px;
+  background: blueviolet;
+  margin: 0 5px;
+  transition: all 0.3s;
+  color: white;
 }
 
-#account button:hover {
-    background: 0;
-    color: blueviolet;
+#account-button button:hover {
+  background: 0;
+  color: blueviolet;
 }
 
 #header-hide button {
-    width: 120px;
-    height: 40px;
-    border: solid 2px blueviolet;
-    border-radius: 20px;
-    background: blueviolet;
-    margin: 0 5px;
-    transition: all 0.3s;
-    color: white;
-
+  width: 120px;
+  height: 40px;
+  border: solid 2px blueviolet;
+  border-radius: 20px;
+  background: blueviolet;
+  margin: 0 5px;
+  transition: all 0.3s;
+  color: white;
 }
 
 #header-hide button:hover {
-    background: 0;
-    color: blueviolet;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  background: 0;
+  color: blueviolet;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #banner {
-    margin: 50px 0;
+  margin: 50px 0;
 }

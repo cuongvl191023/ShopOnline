@@ -1,0 +1,29 @@
+@model Size
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Size/Create.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Create" class="crud-create-form">
+        <div>
+            <p>Tên kích cỡ</p>
+            <input asp-for="SizeName" />
+        </div>
+        <div>
+            <p>Kích cỡ</p>
+            <input asp-for="Size1" type="number" />
+        </div>
+        <div>
+            <button type="submit">Thêm</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách kích cỡ</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

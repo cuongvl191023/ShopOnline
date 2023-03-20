@@ -1,0 +1,15 @@
+.crud-backlist {
+    width: 200px;
+    height: 40px;
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    background: blueviolet;
+    transition: all 0.3s;
+    color: white;
+    margin-top: 10px;
+}
+
+.crud-backlist:hover {
+    background: 0;
+    color: blueviolet;
+}

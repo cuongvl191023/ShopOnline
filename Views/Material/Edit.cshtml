@@ -1,0 +1,49 @@
+@model Material
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<link rel="stylesheet" href="~/css/Material/Edit.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Edit" class="crud-edit-form">
+        <input type="hidden" asp-for="Code" value="@Model.Code">
+        <div>
+            <p>Tên chất liệu</p>
+            <input asp-for="MaterialName" />
+        </div>
+        <div>
+            <p>Độ tin cậy</p>
+            <select asp-for="MaterialReliability">
+                <option value="0">Thấp</option>
+                <option value="1">Trung bình</option>
+                <option value="2">Cao</option>
+            </select>
+        </div>
+        <div>
+            <p>Độ cao cấp</p>
+            <select asp-for="MaterialLevel">
+                <option value="0">Thấp</option>
+                <option value="1">Trung bình</option>
+                <option value="2">Cao</option>
+            </select>
+        </div>
+        <div>
+            <p>Trạng thái</p>
+            <select asp-for="Status">
+                <option value="0">Hoạt động</option>
+                <option value="-1">Không hoạt động</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Sửa</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách chất liệu</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

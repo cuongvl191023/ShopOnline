@@ -1,3 +1,10 @@
 ﻿@using ShopOnline
 @using ShopOnline.Models
+@using ShopOnline.Service
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject ProductService _productService;
+@inject ColorService _colorService;
+@inject BrandService _brandService;
+@inject MaterialService _materialService;
+@inject ShoeService _shoeService;
+@inject SizeService _sizeService;

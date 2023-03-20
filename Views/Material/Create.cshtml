@@ -1,0 +1,41 @@
+@model Material
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/Material/Create.css" asp-append-version="true" />
+<hr />
+<div class="row">
+    <form asp-action="Create" class="crud-create-form">
+        <div>
+            <p>Tên chất liệu</p>
+            <input asp-for="MaterialName" />
+        </div>
+        <div>
+            <p>Độ tin cậy</p>
+            <select asp-for="MaterialReliability">
+                <option value="0">Thấp</option>
+                <option value="1">Trung bình</option>
+                <option value="2">Cao</option>
+            </select>
+        </div>
+        <div>
+            <p>Độ cao cấp</p>
+            <select asp-for="MaterialLevel">
+                <option value="0">Thấp</option>
+                <option value="1">Trung bình</option>
+                <option value="2">Cao</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Thêm</button>
+        </div>
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách chất liệu</button></a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

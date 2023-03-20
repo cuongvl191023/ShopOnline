@@ -1,0 +1,53 @@
+@model Brand
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/css/Brand/Details.css" asp-append-version="true" />
+<div>
+    <hr />
+    <img src="~/BrandLogo/@Model.BrandLogo" alt="Logo của @Model.BrandLogo" width="20%">
+    <hr>
+    <dl class="row"> 
+        <dt class="col-sm-2">
+            Mã thương hiệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Tên thương hiệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandName
+        </dd>
+        <dt class="col-sm-2">
+            Quốc gia
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandNation
+        </dd>
+        <dt class="col-sm-2">
+           Website
+        </dt>
+        <dd class="col-sm-10">
+            <a href="@Model.BrandWebsite" class="text-black text-decoration-none">@Model.BrandWebsite</a> 
+        </dd>
+        <dt class="col-sm-2">
+            Mô tả
+        </dt>
+        <dd class="col-sm-10">
+            @Model.BrandDescribe
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id"><button class="crud-toedit">Sửa</button></a>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách thương hiệu</button></a>
+</div>

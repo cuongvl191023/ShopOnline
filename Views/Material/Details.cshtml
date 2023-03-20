@@ -1,0 +1,45 @@
+@model Material
+
+@{
+    ViewData["Title"] = "Details";
+}
+<link rel="stylesheet" href="~/css/Material/Details.css" asp-append-version="true" />
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã chất liệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Tên chất liệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.MaterialName
+        </dd>
+        <dt class="col-sm-2">
+            Độ tin cậy
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.MaterialReliability == 0 ? "Thấp" : Model.MaterialReliability == 1 ? "Trung bình" : "Cao")
+        </dd>
+        <dt class="col-sm-2">
+            Độ cao cấp
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.MaterialLevel == 0 ? "Thấp" : Model.MaterialLevel == 1 ? "Trung bình" : "Cao")
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id"><button class="crud-toedit">Sửa</button></a>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách chất liệu</button></a>
+</div>

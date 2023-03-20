@@ -1,0 +1,47 @@
+@model Material
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<link rel="stylesheet" href="~/css/Material/Delete.css" asp-append-version="true" />
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Mã chất liệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Code
+        </dd>
+        <dt class="col-sm-2">
+            Tên chất liệu
+        </dt>
+        <dd class="col-sm-10">
+            @Model.MaterialName
+        </dd>
+        <dt class="col-sm-2">
+            Độ tin cậy
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.MaterialReliability == 0 ? "Thấp" : Model.MaterialReliability == 1 ? "Trung bình" : "Cao")
+        </dd>
+        <dt class="col-sm-2">
+            Độ cao cấp
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.MaterialLevel == 0 ? "Thấp" : Model.MaterialLevel == 1 ? "Trung bình" : "Cao")
+        </dd>
+        <dt class="col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Status == 0 ? "Hoạt động" : "Không hoạt động")
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Xóa" class="btn btn-danger" />
+    </form>
+    <a asp-action="Index"><button class="crud-backlist">Danh sách màu sắc</button></a>
+</div>
